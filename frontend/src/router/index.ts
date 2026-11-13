@@ -11,6 +11,7 @@ const Robotflow = () => import('@/views/robotflow/index.vue')
 const Retrypolicy = () => import('@/views/retrypolicy/index.vue')
 const Resultcheck = () => import('@/views/resultcheck/index.vue')
 const Alertrule = () => import('@/views/alertrule/index.vue')
+const Alertticket = () => import('@/views/alertticket/index.vue')
 const Diagnose = () => import('@/views/diagnose/index.vue')
 const Scheduler = () => import('@/views/scheduler/index.vue')
 const Exportconf = () => import('@/views/exportconf/index.vue')
@@ -34,6 +35,7 @@ const router = createRouter({
     { path: '/retrypolicy', name: 'retrypolicy', component: Retrypolicy },
     { path: '/resultcheck', name: 'resultcheck', component: Resultcheck },
     { path: '/alertrule', name: 'alertrule', component: Alertrule },
+    { path: '/alertticket', name: 'alertticket', component: Alertticket },
     { path: '/diagnose', name: 'diagnose', component: Diagnose },
     { path: '/scheduler', name: 'scheduler', component: Scheduler },
     { path: '/exportconf', name: 'exportconf', component: Exportconf },

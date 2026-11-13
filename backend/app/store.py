@@ -15,6 +15,12 @@ class Store:
             name: [dict(row) for row in rows] for name, rows in SEED_ROWS.items()
         }
 
+    def reset(self) -> None:
+        """按种子数据重建全部表：主要给单元测试提供干净的初始状态。"""
+        self._tables = {
+            name: [dict(row) for row in rows] for name, rows in SEED_ROWS.items()
+        }
+
     def module_names(self) -> list[str]:
         return sorted(self._tables)
 
